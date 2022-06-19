@@ -99,7 +99,15 @@ public class Array2
     /// </summary>
     public bool Lucky13(int[] nums)
     {
-        throw new NotImplementedException();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] == 1 || nums[i] == 3)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /// <summary>
@@ -111,7 +119,20 @@ public class Array2
     /// </summary>
     public bool Sum28(int[] nums)
     {
-        throw new NotImplementedException();
+        int sum = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] == 2)
+            {
+                sum = sum + 2;
+            }
+        }
+
+        if (sum == 8)
+        {
+            return true;
+        }
+        return false;
     }
 
     /// <summary>
