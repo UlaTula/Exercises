@@ -87,7 +87,7 @@ public class Array2
     /// </summary>
     public bool Has22(int[] nums)
     {
-        throw new NotImplementedException();
+        throw new NotImplementedException(); 
     }
 
     /// <summary>
